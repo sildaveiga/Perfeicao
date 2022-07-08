@@ -1,0 +1,48 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rContainer {
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rContainer > h1 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.rInput {
+  height: 30px;
+  width: 40vw;
+  padding: 20px;
+  margin: 1px;
+}
+
+.rButton {
+  border: none;
+  padding: 10px 20px;
+  background-color: #f07167;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.rButton:disabled {
+  background-color: #0071c28c;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 380) {
+  .rContainer {
+    width: 75%;
+  }
+}
